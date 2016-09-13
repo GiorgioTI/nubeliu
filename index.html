@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"/>
+	<title> Nubeliu </title>
+	<link href="css/bootstrap.css" rel="stylesheet"/>
+	<link href="css/style.css" rel="stylesheet"/>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/validacao.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="imagens/logo_nubeliu.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="sobre.html">Sobre e Contato</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mais<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">01 - Opção</a></li>
+                            <li><a href="#">02 - Opção</a></li>
+                            <li><a href="#">03 - Opção</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">04 - Opção </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <br><br>
+
+                <!-- Inicio Fomulario-->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <!--Empty-->
+                        </div>
+                        <div class="form col-sm-4">
+                            <br><br>
+                            <img class="img-responsive center-block" src="imagens/logo_simbolo.jpg"><br>
+                            <h4 class="text-center text-muted">Entre no Painel de Controle</h4>
+                            <br>
+                            <!-- CONFIGURAR JAVASCRIPT FORMULÁRIO AQUI-->
+                            <form name="form_login" method="post" action="grafico.html" onsubmit="return validacao();">
+                                <input name="email" type="text" class="form-control" placeholder="Email..."><br>
+                                <input name="password" type="password" class="form-control" placeholder="Senha..."><br>
+                                <button type="submit" class="btn btn-info center-block btn_form">Entrar</button><br>
+                            </form>
+                            <p class="text-center"><a link href="cadastro.html">Cadastre-se</a> ou <a link href="#">esqueci minha senha</a></p>
+                            <!--Mensagem de Erro-->
+                                <div id="erro"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <!--Empty-->
+                        </div>
+                    </div>
+                </div>
+                <!--Fim Fomulario-->
+
+
+                </body>
+                </html>
+                <div class="col-sm-4">
+                    <!--Empty-->
+                </div>
+            </div>
+        </div>
+        <!--Fim Fomulario-->
+
+
+    
+</body>
+</html>
