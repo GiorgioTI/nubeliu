@@ -10,7 +10,32 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="js/validacao.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script >
+
+        $(document).ready(function () {
+            $('#formlogin').validate({
+                rules:{
+                    email:{
+                        required: true,
+                        email: true
+                    },
+                    password: {
+                        required: true,
+                        minlength: 5
+                    }
+                },
+                messages:{
+                    email: "<small class='text-danger'>"+"Por favor insira um endereço de e-mail válido"+"</small>",
+                    password: {
+                        required: "<small class='text-danger'>"+"Por favor, digita uma senha"+"</small>",
+                        minlength: "<small class='text-danger'>"+"Sua senha deve ter pelo menos 5 caracteres"+"</small>"
+                    }
+                }
+            });
+        });
+
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-inverse">
@@ -62,7 +87,7 @@
                             <h4 class="text-center text-muted">Entre no Painel de Controle</h4>
                             <br>
                             <!-- CONFIGURAR JAVASCRIPT FORMULÁRIO AQUI-->
-                            <form name="form_login" method="post" action="grafico.html" onsubmit="return validacao();">
+                            <form id="formlogin" method="post" action="grafico.html" onsubmit="return validacao();">
                                 <input name="email" type="text" class="form-control" placeholder="Email..."><br>
                                 <input name="password" type="password" class="form-control" placeholder="Senha..."><br>
                                 <button type="submit" class="btn btn-info center-block btn_form">Entrar</button><br>
