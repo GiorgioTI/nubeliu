@@ -27,6 +27,7 @@
                 },
                 messages:{
                     email: "<small class='text-danger'>"+"Por favor insira um endereço de e-mail válido"+"</small>",
+
                     password: {
                         required: "<small class='text-danger'>"+"Por favor, digita uma senha"+"</small>",
                         minlength: "<small class='text-danger'>"+"Sua senha deve ter pelo menos 5 caracteres"+"</small>"
@@ -87,14 +88,14 @@
                             <h4 class="text-center text-muted">Entre no Painel de Controle</h4>
                             <br>
                             <!-- CONFIGURAR JAVASCRIPT FORMULÁRIO AQUI-->
-                            <form id="formlogin" method="post" action="grafico.html" onsubmit="return validacao();">
+                            <form id="formlogin" method="post" action="grafico.html">
+
                                 <input name="email" type="text" class="form-control" placeholder="Email..."><br>
                                 <input name="password" type="password" class="form-control" placeholder="Senha..."><br>
+
                                 <button type="submit" class="btn btn-info center-block btn_form">Entrar</button><br>
                             </form>
                             <p class="text-center"><a link href="cadastro.html">Cadastre-se</a> ou <a link href="#">esqueci minha senha</a></p>
-                            <!--Mensagem de Erro-->
-                                <div id="erro"></div>
                             </div>
                         </div>
                         <div class="col-sm-4">
